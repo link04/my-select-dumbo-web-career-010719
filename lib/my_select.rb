@@ -4,11 +4,11 @@ def my_select(collection)
     i = 0 
     selected = []
     while i < collection.length 
-    if yield(collection[i]) == true
-      selected.push(collection[i])
-    end
-      i += 1
-    end
+      if yield(collection[i]) == true
+        selected.push(collection[i])
+      end
+        i += 1
+      end
     selected
   else
     puts "That collection is empty please add some items!"
