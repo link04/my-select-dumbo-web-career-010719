@@ -8,7 +8,7 @@ def my_select(collection)
         selected.push(collection[i])
       end
         i += 1
-      end
+    end
     selected
   else
     puts "That collection is empty please add some items!"
