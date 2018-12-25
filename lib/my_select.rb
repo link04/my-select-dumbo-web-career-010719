@@ -6,7 +6,7 @@ def my_select(collection)
     collection[0]
   end
   else
-    
+    puts "That collection is empty please add some items!"
   end
  else
    puts "No block was given, but thast okay I've got your back."
