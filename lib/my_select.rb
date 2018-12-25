@@ -7,6 +7,7 @@ def my_select(collection)
       selected.push(yield(collection[i]))
       i += 1
     end
+    selected
   else
     puts "That collection is empty please add some items!"
   end
