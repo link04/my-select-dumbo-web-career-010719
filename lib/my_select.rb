@@ -2,8 +2,9 @@ def my_select(collection)
  if block_given?
    if collection.length > 0
     i = 0 
+    selected = []
     while i < collection.length 
-      yield collection[i]
+      selected.push(yield(collection[i]))
       i += 1
     end
   else
