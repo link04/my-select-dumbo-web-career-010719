@@ -13,3 +13,9 @@ def my_select(collection)
    puts "No block was given, but thast okay I've got your back."
  end
 end
+
+hello_t(["Tim", "Tom", "Jim"]) do |name|
+  if name.start_with?("T")
+    puts "Hi, #{name}"
+  end
+end
